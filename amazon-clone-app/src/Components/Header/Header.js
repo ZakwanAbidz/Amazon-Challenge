@@ -26,13 +26,13 @@ const Header = () => {
             />
         </Link>
 
-        <div className='header__location'>
+        {/* <div className='header__location'>
             <AddLocationIcon className='header__locationIcon'/>
             <div className='header__locationOption'>
                 <span className='header__optionLineOne'>Hello</span>
                 <span className='header__optionLineTwo'>Select Your Address</span>
             </div>
-        </div>
+        </div> */}
 
         <div
         className='header__search'>

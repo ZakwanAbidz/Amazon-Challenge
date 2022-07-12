@@ -5,7 +5,7 @@ import { CheckOutProducts} from '../index';
 import {useStateValue} from '../../ContextAPI/StateProvider'
 
 const CheckOut = () => {
-  const [{ basket}, dispatch] = useStateValue();
+  const [{ basket,user}, dispatch] = useStateValue();
   return (
   <div className="checkout">
           <div className='checkout__left'>
@@ -15,6 +15,7 @@ const CheckOut = () => {
              alt=""
             />
             <div className="checkout__title">
+              <h3>Hello, {user.email}</h3>
               <h2>Your Shopping Basket</h2>
 
                   {basket.map(item => (
